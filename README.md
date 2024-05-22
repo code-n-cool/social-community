@@ -31,7 +31,7 @@ It is recommended to install `community` using [`git`](https://git-scm.com/).
 
    ```bash
    cd ~/.talon/user
-   git clone https://github.com/talonhub/community community
+   git clone https://github.com/code-n-cool/social-community community
    ```
 
 Note that it is also possible to install `community` by [downloading and extracting a zip file](#alternate-installation-method-zip-file), but this approach is discouraged because it makes it more difficult to keep track of any changes you may make to your copy of the files.
@@ -46,7 +46,7 @@ It is recommended to install `community` using [`git`](https://git-scm.com/).
 
    ```
    cd %AppData%\Talon\user
-   git clone https://github.com/talonhub/community community
+   git clone https://github.com/code-n-cool/social-community community
    ```
 
 Note that it is also possible to install `community` by [downloading and extracting a zip file](#alternate-installation-method-zip-file), but this approach is discouraged because it makes it more difficult to keep track of any changes you may make to your copy of the files.
@@ -56,13 +56,13 @@ Note that it is also possible to install `community` by [downloading and extract
 1. `help active` will display the available commands for the active application.
    - Available commands can change with the application, or even window title that has focus.
    - You may navigate help using the displayed numbers. e.g., `help one one` or `help eleven` to open the 11th item in the help list.
-   - Note that all help-related commands are defined in [`core/help/help.talon`](https://github.com/talonhub/community/blob/main/core/help/help.talon) and [`core/help/help_open.talon`](https://github.com/talonhub/community/blob/main/core/help/help_open.talon)
+   - Note that all help-related commands are defined in [`core/help/help.talon`](https://github.com/code-n-cool/social-community/blob/main/core/help/help.talon) and [`core/help/help_open.talon`](https://github.com/code-n-cool/social-community/blob/main/core/help/help_open.talon)
 2. You can also search for commands by saying `help search <phrase>`. For example, `help search tab` displays all tab-related commands, and `help search help` displays all help-related commands.
 3. You can also jump immediately into a particular help context display by recalling the name displayed in help window (based on the name of the .talon file) e.g. `help symbols` or `help visual studio`
 4. `help alphabet` will display the alphabet
 5. `command history` will toggle a display of the recent commands
 6. `help format` will display the available formatters with examples.
-7. Many useful, basic commands are defined in https://github.com/talonhub/community/blob/main/core/edit/edit.talon
+7. Many useful, basic commands are defined in https://github.com/code-n-cool/social-community/blob/main/core/edit/edit.talon
    - `undo that` and `redo that` are the default undo/redo commands.
    - `paste that`, `copy that`, and `cut that` for pasting/copy/cutting, respectively.
 8. For community-generated documentation on Talon itself, please visit https://talon.wiki/
@@ -78,7 +78,7 @@ If you use vim, just start with the numbers and alphabet, otherwise look at gene
 ### Alphabet
 
 The alphabet is defined here
-https://github.com/talonhub/community/blob/main/core/keys/keys.py#L3
+https://github.com/code-n-cool/social-community/blob/main/core/keys/keys.py#L3
 
 `help alphabet` will open a window that displays the alphabet. `help close` to hide the window.
 
@@ -86,9 +86,9 @@ Try saying e.g. `air bat cap` to insert abc.
 
 ### Keys
 
-Keys are defined in keys.py. The alphabet is used for A-Z. For the rest, search for `modifier_keys` and then keep scrolling through the file, eg. roughly https://github.com/talonhub/community/blob/main/core/keys/keys.py#L111
+Keys are defined in keys.py. The alphabet is used for A-Z. For the rest, search for `modifier_keys` and then keep scrolling through the file, eg. roughly https://github.com/code-n-cool/social-community/blob/main/core/keys/keys.py#L111
 
-All key commands are defined in [keys.talon](https://github.com/talonhub/community/blob/main/core/keys/keys.talon). For example, say `shift air` to press `shift-a`, which types a capital `A`.
+All key commands are defined in [keys.talon](https://github.com/code-n-cool/social-community/blob/main/core/keys/keys.talon). For example, say `shift air` to press `shift-a`, which types a capital `A`.
 
 On Windows, try commands such as
 
@@ -107,9 +107,9 @@ Any combination of the modifiers, symbols, alphabet, numbers and function keys c
 ### Symbols
 
 Some symbols are defined in keys.py, so you can say e.g. `control colon` to press those keys.
-https://github.com/talonhub/community/blob/main/core/keys/keys.py#L140
+https://github.com/code-n-cool/social-community/blob/main/core/keys/keys.py#L140
 
-Some other symbols are defined here: https://github.com/talonhub/community/blob/main/plugin/symbols/symbols.talon
+Some other symbols are defined here: https://github.com/code-n-cool/social-community/blob/main/plugin/symbols/symbols.talon
 
 ### Formatters
 
@@ -120,24 +120,24 @@ Try using formatters by saying e.g. `snake hello world`, which will insert hello
 Multiple formatters can be used together, e.g. `dubstring snake hello world`. This will insert "hello_world"
 
 Formatters (snake, dubstring) are defined here
-https://github.com/talonhub/community/blob/main/core/text/formatters.py#L137
+https://github.com/code-n-cool/social-community/blob/main/core/text/formatters.py#L137
 
 All formatter-related commands are defined here
-https://github.com/talonhub/community/blob/main/core/text/text.talon#L8
+https://github.com/code-n-cool/social-community/blob/main/core/text/text.talon#L8
 
 ### Mouse commands
 
-See https://github.com/talonhub/community/blob/main/plugin/mouse/mouse.talon for commands to click, drag, scroll, and use an eye tracker. To use a grid to click at a certain location on the screen, see [mouse_grid](https://github.com/talonhub/community/tree/main/core/mouse_grid).
+See https://github.com/code-n-cool/social-community/blob/main/plugin/mouse/mouse.talon for commands to click, drag, scroll, and use an eye tracker. To use a grid to click at a certain location on the screen, see [mouse_grid](https://github.com/code-n-cool/social-community/tree/main/core/mouse_grid).
 
 ### Generic editing commands
 
-https://github.com/talonhub/community/blob/main/core/edit/edit.talon
+https://github.com/code-n-cool/social-community/blob/main/core/edit/edit.talon
 
 These generic commands are global. Commands such as `go word left` will work in any text box.
 
 ### Repeating commands
 
-For repeating commands, useful voice commands are defined here: https://github.com/talonhub/community/blob/main/plugin/repeater/repeater.talon
+For repeating commands, useful voice commands are defined here: https://github.com/code-n-cool/social-community/blob/main/plugin/repeater/repeater.talon
 
 Try saying e.g. `go up fifth` will go up five lines.
 Try saying e.g. `select up third` to hit `shift-up` three times to select some lines in a text field.
@@ -145,7 +145,7 @@ Try saying e.g. `select up third` to hit `shift-up` three times to select some l
 ### Window management
 
 Global window managment commands are defined here:
-https://github.com/talonhub/community/blob/main/core/windows_and_tabs/window_management.talon
+https://github.com/code-n-cool/social-community/blob/main/core/windows_and_tabs/window_management.talon
 
 - `running list` will toggle a GUI list of words you can say to switch to running applications.
 - `focus chrome` will focus the chrome application.
@@ -153,7 +153,7 @@ https://github.com/talonhub/community/blob/main/core/windows_and_tabs/window_man
 
 ### Screenshot commands
 
-https://github.com/talonhub/community/blob/main/plugin/screenshot/screenshot.talon
+https://github.com/code-n-cool/social-community/blob/main/plugin/screenshot/screenshot.talon
 
 ### Programming Languages
 
@@ -161,14 +161,14 @@ Specific programming languages may be activated by voice commands, or via title 
 
 Activating languages via commands will enable the commands globally, e.g. they'll work in any application. This will also disable the title tracking method (code.language in .talon files) until the "clear language modes" voice command is used.
 
-The commands for enabling languages are defined here: https://github.com/talonhub/community/blob/main/core/modes/language_modes.talon
+The commands for enabling languages are defined here: https://github.com/code-n-cool/social-community/blob/main/core/modes/language_modes.talon
 
 By default, title tracking activates coding languages in supported applications such as VSCode, Visual Studio (requires plugin), and Notepad++.
 
 To enable title tracking for your application:
 
 1. The active filename (including extension) must be included in the editor's title
-2. Implement the required Talon-defined `filename` action to correctly extract the filename from the programs's title. See https://github.com/talonhub/community/blob/main/apps/vscode/vscode.py#L122-L138 for an example.
+2. Implement the required Talon-defined `filename` action to correctly extract the filename from the programs's title. See https://github.com/code-n-cool/social-community/blob/main/apps/vscode/vscode.py#L122-L138 for an example.
 
 Python, C#, Talon and javascript language support is currently broken up into several tags in an attempt to define a common grammar where possible between languages. Each tag is defined by a .talon file, which defines the voice commands, and a Python file which declares the actions that should be implemented by each concrete language implementation to support those voice commands. Currently, the tags which are available are:
 
@@ -194,7 +194,7 @@ The support for the language-specific implementations of actions are then locate
 
 - `lang/{your-language}/{your-language}.py`
 
-To start support for a new language, ensure the appropriate extension is added to the [`language_extensions` in language_modes.py](https://github.com/talonhub/community/blob/main/core/modes/language_modes.py#L9).
+To start support for a new language, ensure the appropriate extension is added to the [`language_extensions` in language_modes.py](https://github.com/code-n-cool/social-community/blob/main/core/modes/language_modes.py#L9).
 Then create the following files:
 
 - `lang/{your-language}/{your-language}.py`
@@ -206,7 +206,7 @@ You may also want to add a force command to `language_modes.talon`.
 
 ## File Manager commands
 
-For the following file manager commands to work, your file manager must display the full folder path in the title bar. https://github.com/talonhub/community/blob/main/tags/file_manager/file_manager.talon
+For the following file manager commands to work, your file manager must display the full folder path in the title bar. https://github.com/code-n-cool/social-community/blob/main/tags/file_manager/file_manager.talon
 
 For Mac OS X's Finder, run this command in terminal to display the full path in the title.
 
@@ -228,7 +228,7 @@ Notes:
 To implement support for a new program, you need to implement the relevant file manager actions for your application and assert the user.file_manager tag.
 
 - There are a number of example implementations in the repository. Finder is a good example to copy and customize to your application as needed.
-  https://github.com/talonhub/community/blob/main/apps/finder/finder.py
+  https://github.com/code-n-cool/social-community/blob/main/apps/finder/finder.py
 
 ## Terminal commands
 
@@ -245,7 +245,7 @@ tag(): user.tabs
 
 For instance, kubectl commands (kubernetes) aren't relevant to everyone.
 
-Note also that while some of the command sets associated with these tags are defined in talon files within [tags](https://github.com/talonhub/community/tree/main/tags), others, like git, are defined within [apps](https://github.com/talonhub/community/tree/main/apps). Additionally, the commands for tabs are defined in [tabs.talon](https://github.com/talonhub/community/blob/main/core/windows_and_tabs/tabs.talon).
+Note also that while some of the command sets associated with these tags are defined in talon files within [tags](https://github.com/code-n-cool/social-community/tree/main/tags), others, like git, are defined within [apps](https://github.com/code-n-cool/social-community/tree/main/apps). Additionally, the commands for tabs are defined in [tabs.talon](https://github.com/code-n-cool/social-community/blob/main/core/windows_and_tabs/tabs.talon).
 
 ### Unix utilities
 
@@ -271,9 +271,9 @@ into each editor.
 There are other commands not described fully within this file. As an overview:
 
 - The apps folder has command sets for use within different applications
-- The core folder has various commands described [here](https://github.com/talonhub/community/blob/main/core/README.md)
-- The lang folder has commands for writing [programming languages](https://github.com/talonhub/community?tab=readme-ov-file#programming-languages)
-- The plugin folder has various commands described [here](https://github.com/talonhub/community/blob/main/plugin/README.md)
+- The core folder has various commands described [here](https://github.com/code-n-cool/social-community/blob/main/core/README.md)
+- The lang folder has commands for writing [programming languages](https://github.com/code-n-cool/social-community?tab=readme-ov-file#programming-languages)
+- The plugin folder has various commands described [here](https://github.com/code-n-cool/social-community/blob/main/plugin/README.md)
 - The tags folder has various other commands, such as using a browser, navigating a filesystem in terminal, and managing multiple cursors
 
 ## Settings
@@ -359,6 +359,6 @@ It is possible to install `community` by downloading and extracting a zip file i
 
 If you wish to install `community` by downloading and extracting a zip file, proceed as follows:
 
-1. Download the [zip archive of community](https://github.com/talonhub/community/archive/refs/heads/main.zip)
+1. Download the [zip archive of community](https://github.com/code-n-cool/social-community/archive/refs/heads/main.zip)
 1. Extract the files. If you don’t know how to extract zip files, a quick google search for "extract zip files" may be helpful.
 1. Place these extracted files inside the `user` folder of the Talon Home directory. You can find this folder by right clicking the Talon icon in taskbar, clicking Scripting > Open ~/talon, and navigating to `user`.
